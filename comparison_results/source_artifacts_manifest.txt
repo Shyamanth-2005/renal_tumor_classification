@@ -1,0 +1,19 @@
+Source directory: C:\Users\Shyam\Desktop\dl_output\og
+Generated at: 2026-03-29T09:47:45
+
+MobileNetV2_accuracy.png	24526 bytes
+MobileNetV2_history.json	822 bytes
+MobileNetV2_loss.png	27839 bytes
+MobileNetV2_report.txt	326 bytes
+MobileNetV2_ROC.png	21745 bytes
+ResNet50_accuracy.png	29640 bytes
+ResNet50_history.json	781 bytes
+ResNet50_loss.png	27915 bytes
+ResNet50_report.txt	326 bytes
+ResNet50_ROC.png	21436 bytes
+ROC_Comparison.png	27976 bytes
+VGG16_accuracy.png	25607 bytes
+VGG16_history.json	796 bytes
+VGG16_loss.png	22051 bytes
+VGG16_report.txt	326 bytes
+VGG16_ROC.png	21145 bytes

@@ -1,0 +1,13 @@
+Real 100-Epoch Reproduction Instructions
+=======================================
+
+Expected dataset layout:
+- DATASET_ROOT/train/<class_name>/*.jpg
+- DATASET_ROOT/val/<class_name>/*.jpg
+- DATASET_ROOT/test/<class_name>/*.jpg
+
+Required dependency:
+- TensorFlow must be installed in the Python environment before running train_compare_100_epochs.py.
+
+Example command:
+python train_compare_100_epochs.py --data-dir DATASET_ROOT --output-dir out/100_epoch_run --epochs 100

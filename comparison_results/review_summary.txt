@@ -1,0 +1,27 @@
+Review Summary
+==============
+
+This summary is based on the saved result artifacts present in the original folder and does not claim any rerun beyond those files.
+
+Why VGG16 is the strongest overall choice from these saved results:
+- VGG16 shows the best convergence behavior across the recorded epochs.
+- VGG16 reaches high validation accuracy earlier than the other models.
+- VGG16 has the lowest validation loss among the three models, which indicates more stable generalization.
+- VGG16 maintains strong accuracy with a very small train/validation gap in the saved run.
+
+Observed strengths by model:
+- VGG16: best overall convergence consistency, best mean validation accuracy, best validation-loss profile.
+- ResNet50: strongest final classification report accuracy in the saved report, but weaker loss profile and less stable early learning.
+- MobileNetV2: reasonable and efficient performance, but slower convergence than VGG16 in the saved history.
+
+Main conclusion:
+- If model selection is based on convergence speed, stability, and validation-loss behavior, VGG16 is the most defensible winner from the saved artifacts in this folder.
+
+Files to review:
+- comparison_analysis.txt
+- model_summary.csv
+- comparison_accuracy.png
+- comparison_loss.png
+- convergence_summary.png
+- report_metrics.png
+- roc_gallery.png

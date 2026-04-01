@@ -1,0 +1,26 @@
+Comparison Analysis
+===================
+
+Input artifact directory: C:\Users\Shyam\Desktop\dl_output\og
+Generated at: 2026-03-29T09:47:45
+
+Important limitation:
+- The current folder contains saved result artifacts for 10 epochs only. There is no dataset or training script here, so a genuine 100-epoch rerun cannot be reproduced from these files alone.
+
+Observed model behavior from saved histories:
+- Fastest and most consistent convergence: VGG16 (mean val accuracy 0.9660).
+- Lowest validation loss: VGG16 (best val loss 0.0304 at epoch 7).
+- Highest reported test/report accuracy: ResNet50 (1.0000).
+
+Per-model summary:
+- VGG16: final val acc 0.9800, best val acc 0.9900 (epoch 6), best val loss 0.0304 (epoch 7), mean val acc 0.9660, report acc 0.99, 95% val acc epoch 2.
+- ResNet50: final val acc 1.0000, best val acc 1.0000 (epoch 5), best val loss 0.5654 (epoch 10), mean val acc 0.8910, report acc 1.0, 95% val acc epoch 5.
+- MobileNetV2: final val acc 0.9900, best val acc 1.0000 (epoch 9), best val loss 0.3532 (epoch 10), mean val acc 0.8690, report acc 0.98, 95% val acc epoch 9.
+
+Ranking snapshots:
+- Mean validation accuracy ranking: VGG16 > ResNet50 > MobileNetV2
+- Best validation loss ranking: VGG16 > MobileNetV2 > ResNet50
+- Classification report accuracy ranking: ResNet50 > VGG16 > MobileNetV2
+
+Recommended next step for a real 100-epoch comparison:
+- Use train_compare_100_epochs.py with a dataset directory containing train/, val/, and test/ splits. That script is intended to run a fair, reproducible experiment instead of extrapolating from saved plots.
